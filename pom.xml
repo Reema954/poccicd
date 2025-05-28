@@ -38,6 +38,10 @@
 						<muleVersion>4.9.0</muleVersion>
 						<username>mulesample210</username>
 						<password>Monika@54321</password>
+						<connetedAppClientId>4c4cc7b7b5f44d97af1be2b99efdaf0f</connetedAppClientId>
+						<connetedAppClientSecret>836a4827e4E34AfBbFb8F86E2983df9f</connetedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						
 						<applicationName>poccicd</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
