@@ -19,7 +19,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Deploy to Exchange
-      run: mvn deploy -DmuleDeploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -e -X
+      run: mvn clean deploy -DskipTests -DbusinessGroupId=29e2f09f-0b24-4f6a-8092-aa17da7ee9ef
 
 
     - name: Deploy to CloudHub
