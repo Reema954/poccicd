@@ -13,9 +13,10 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<ee:transform doc:name="Transform Message" doc:id="7fe8c4b5-04f0-4709-b13d-a36b3b79848c" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
+output application/json
 ---
 {
+					"msg":"success"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
