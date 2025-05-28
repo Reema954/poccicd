@@ -26,7 +26,7 @@ jobs:
           <settings>
             <servers>
               <server>
-                <id>Repository</id>
+                <id>anypoint-exchange-v3</id>
                 <username>${{ secrets.ANYPOINT_USERNAME }}</username>
                 <password>${{ secrets.ANYPOINT_PASSWORD }}</password>
               </server>
@@ -38,7 +38,7 @@ jobs:
         run: mvn clean package 
 
       - name: Deploy to Exchange
-        run: mvn deploy -DskipTests -DbusinessGroupId=29e2f09f-0b24-4f6a-8092-aa17da7ee9ef -e -X
+        run: mvn deploy -s settings.xml -e -X
 
       - name: Deploy to CloudHub 2.0
-        run:  mvn mule:deploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -DskipDeploymentVerification=true -e -X
+        run:  mvn deploy -DmuleDeploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -DskipDeploymentVerification=true -e -X
