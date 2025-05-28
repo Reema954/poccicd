@@ -35,10 +35,10 @@ jobs:
           EOF
 
       - name: Package Application
-        run: mvn clean package -DskipTests
+        run: mvn clean package 
 
       - name: Deploy to Exchange
-        run: mvn deploy -DskipTests -DbusinessGroupId=29e2f09f-0b24-4f6a-8092-aa17da7ee9ef
+        run: mvn deploy -DskipTests -DbusinessGroupId=29e2f09f-0b24-4f6a-8092-aa17da7ee9ef -e -X
 
       - name: Deploy to CloudHub 2.0
-        run:  mvn mule:deploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -DskipDeploymentVerification=true
+        run:  mvn mule:deploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -DskipDeploymentVerification=true -e -X
