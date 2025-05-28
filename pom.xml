@@ -40,6 +40,7 @@
 						<applicationName>poccicd</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
+						<skipDeploymentVerification>true</skipDeploymentVerification>
 						<deploymentSettings>
 							<http>
 								<inbound>
