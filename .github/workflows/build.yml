@@ -19,21 +19,6 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Set up Maven settings.xml for Anypoint Exchange
-        run: |
-          mkdir -p ~/.m2
-          cat > ~/.m2/settings.xml <<EOF
-          <settings>
-            <servers>
-              <server>
-                <id>anypoint-exchange-v3</id>
-                <username>${{ secrets.ANYPOINT_USERNAME }}</username>
-                <password>${{ secrets.ANYPOINT_PASSWORD }}</password>
-              </server>
-            </servers>
-          </settings>
-          EOF
-
       - name: Package Application
         run: mvn clean package 
 
