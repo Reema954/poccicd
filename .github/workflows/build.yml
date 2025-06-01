@@ -23,7 +23,7 @@ jobs:
         run: mvn clean package 
 
       - name: Deploy to Exchange
-        run: mvn deploy -s poccicd/settings.xml -e -X
+        run: mvn deploy -s settings.xml -e -X
 
       - name: Deploy to CloudHub 2.0
         run:  mvn deploy -DmuleDeploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -DskipDeploymentVerification=true -e -X
