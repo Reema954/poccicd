@@ -23,27 +23,6 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.2.0</version>
 			</plugin>
-			<plugin>
-  				<groupId>org.mule.tools.maven</groupId>
-  				<artifactId>exchange-mule-maven-plugin</artifactId>
-  				<version>0.1.4</version>
-  				<executions>
-    					<execution>
-      						<id>default-deploy-to-exchange</id>
-      						<phase>deploy</phase>
-      						<goals>
-        						<goal>exchange-pre-deploy</goal>
-        						<goal>exchange-deploy</goal>
-      						</goals>
-    					</execution>
-  				</executions>
-  				<configuration>
-    					<organizationId>29e2f09f-0b24-4f6a-8092-aa17da7ee9ef</organizationId>
-					<username>mulesample210</username>
-					<password>Monika@54321</password>
-    					<environment>Sandbox</environment>
-  				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
