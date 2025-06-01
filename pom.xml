@@ -36,7 +36,7 @@
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
-						<muleVersion>4.9.0</muleVersion>
+						<muleVersion>4.9.5</muleVersion>
 						<username>mulesample210</username>
 						<password>Monika@54321</password>
 						<applicationName>poccicd</applicationName>
