@@ -22,7 +22,5 @@ jobs:
       - name: Package Application
         run: mvn clean package 
 
-
-
       - name: Deploy to CloudHub 2.0
         run:  mvn deploy -DmuleDeploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -DskipExchangePreDeploy=true  -DskipDeploymentVerification=true -e -X
