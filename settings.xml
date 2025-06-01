@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <settings>
-    <servers>
-        <server>
-            <id>anypoint-exchange-v3</id>
-            <username>mulesample210</username>
-            <password>4c4cc7b7b5f44d97af1be2b99efdaf0f?836a4827e4E34AfBbFb8F86E2983df9f</password>
-        </server>
-    </servers>
+  <servers>
+    <server>
+      <id>anypoint-exchange-v3</id>
+      <username>mulesample210</username> 
+      <password>Monika@54321</password> 
+    </server>
+  </servers>
 </settings>
