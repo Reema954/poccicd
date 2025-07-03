@@ -39,7 +39,7 @@
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<businessGroup>abc</businessGroup>
-            					<businessGroupId>f0dd273a-8b96-472b-aa9c-be0fb86f9d08</businessGroupId>
+            					<businessGroupId>29e2f09f-0b24-4f6a-8092-aa17da7ee9ef</businessGroupId>
 						<connectedAppClientId>9415c19bf0944143acfd1e7607af2428</connectedAppClientId>
       						<connectedAppClientSecret>FFB144538c5D4F1Da6Bb551b2A51dc1D</connectedAppClientSecret>
       						<connectedAppGrantType>client_credentials</connectedAppGrantType>
