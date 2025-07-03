@@ -12,7 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.8.0</app.runtime>
+		<app.runtime>4.6.0</app.runtime>
 		<mule.maven.plugin.version>4.5.0</mule.maven.plugin.version>
 	</properties>
 
@@ -36,7 +36,7 @@
 						<provider>MC</provider>
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
-						<muleVersion>4.8.0</muleVersion>
+						<muleVersion>4.6.0</muleVersion>
 						<connectedAppClientId>9415c19bf0944143acfd1e7607af2428</connectedAppClientId>
       						<connectedAppClientSecret>FFB144538c5D4F1Da6Bb551b2A51dc1D</connectedAppClientSecret>
       						<connectedAppGrantType>client_credentials</connectedAppGrantType>
