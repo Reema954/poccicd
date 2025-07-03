@@ -2,8 +2,8 @@
   <servers>
     <server>
       <id>anypoint-exchange-v3</id>
-      <username>${anypoint.username}</username> 
-      <password>${anypoint.username}</password> 
+      <username>${ANYPOINT_USERNAME}</username> 
+      <password>${ANYPOINT_PASSWORD}</password> 
     </server>
   </servers>
 </settings>
