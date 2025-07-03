@@ -18,18 +18,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      - name: Set up Maven settings.xml with Anypoint credentials
-        run: |
-          mkdir -p ~/.m2
-          echo '<settings>' > ~/.m2/settings.xml
-          echo '  <servers>' >> ~/.m2/settings.xml
-          echo '    <server>' >> ~/.m2/settings.xml
-          echo '      <id>anypoint-exchange-v3</id>' >> ~/.m2/settings.xml
-          echo "      <username>${{ secrets.ANYPOINT_USERNAME }}</username>" >> ~/.m2/settings.xml
-          echo "      <password>${{ secrets.ANYPOINT_PASSWORD }}</password>" >> ~/.m2/settings.xml
-          echo '    </server>' >> ~/.m2/settings.xml
-          echo '  </servers>' >> ~/.m2/settings.xml
-          echo '</settings>' >> ~/.m2/settings.xml
 
 
       - name: Package Application
