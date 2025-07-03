@@ -36,8 +36,8 @@
 						<environment>Sandbox</environment>
 						<target>Cloudhub-US-East-2</target>
 						<muleVersion>4.6.1</muleVersion>
-						<connectedAppClientId>9415c19bf0944143acfd1e7607af2428</connectedAppClientId>
-      						<connectedAppClientSecret>FFB144538c5D4F1Da6Bb551b2A51dc1D</connectedAppClientSecret>
+						<connectedAppClientId>a9878feeb0c143708b452952d9a6b49d</connectedAppClientId>
+      						<connectedAppClientSecret>5AAC519C7D9e4375aa1cA3f693AFA71d</connectedAppClientSecret>
       						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<applicationName>poccicd</applicationName>
 						<replicas>1</replicas>
