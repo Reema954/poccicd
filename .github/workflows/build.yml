@@ -18,6 +18,14 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
+      - name: Set Dynamic Version Using GitHub Run Number
+        run: |
+          version="1.0.${{ github.run_number }}"
+          echo "Using dynamic version: $version"
+
+          mvn versions:set -DnewVersion=$version
+          mvn versions:commit
+
       - name: Configure Maven Settings
         run: |
               mkdir -p ~/.m2
