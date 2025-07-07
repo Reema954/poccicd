@@ -19,25 +19,12 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Configure Maven Settings
-        run: |
-          mkdir -p ~/.m2
-          echo "<settings>
-                  <servers>
-                    <server>
-                      <id>anypoint-exchange</id>
-                      <username>${{ secrets.ANYPOINT_USERNAME }}</username>
-                      <password>${{ secrets.ANYPOINT_PASSWORD }}</password>
-                    </server>
-                  </servers>
-                </settings>" > ~/.m2/settings.xml
-
 
       - name: Package Application
         run: mvn clean package -DmuleDeploy
 
       - name: Publish to Exchange
-        run: mvn deploy -DskipTests
+        run: mvn deploy -e -X -DskipTests
 
       - name: Deploy to CloudHub 2.0
         run: mvn deploy -DmuleDeploy -DskipExchangePreDeploy=false -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -e -X
