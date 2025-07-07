@@ -51,15 +51,14 @@
 							<anypoint.platform.client_secret>5AAC519C7D9e4375aa1cA3f693AFA71d</anypoint.platform.client_secret>
 						</properties>
 						
-						<deploymentSettings>
-							<http>
-								<inbound>
-									<publicUrl>https://poccicd.anypoint.com</publicUrl>
-									<forwardSslSession>false</forwardSslSession>
-									<lastMileSecurity>false</lastMileSecurity>
-								</inbound>
-							</http>
-						</deploymentSettings>
+						<integrations>
+							<services>
+								<objectStoreV2>
+									<enabled>true</enabled>
+								</objectStoreV2>
+
+							</services>
+						</integrations>
 					</cloudhub2Deployment>
 				</configuration>
 			</plugin>
