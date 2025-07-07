@@ -32,11 +32,12 @@ jobs:
                   </servers>
                 </settings>" > ~/.m2/settings.xml
 
-      - name: Package Application
-        run: mvn clean package
 
-      - name: Publish to Anypoint Exchange
-        run: mvn deploy -DskipTests -DskipDeploymentVerification=true -DmuleDeploy
+      - name: Package Application
+        run: mvn clean package -DmuleDeploy
+
+      - name: Publish to Exchange
+        run: mvn deploy -DskipTests
 
       - name: Deploy to CloudHub 2.0
         run: mvn deploy -DmuleDeploy -DskipExchangePreDeploy=false -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -e -X
