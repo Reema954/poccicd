@@ -43,8 +43,8 @@
 						<connectedAppClientId>9415c19bf0944143acfd1e7607af2428</connectedAppClientId>
       						<connectedAppClientSecret>FFB144538c5D4F1Da6Bb551b2A51dc1D</connectedAppClientSecret>
       						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<anypoint.platfrom.client.id>a9878feeb0c143708b452952d9a6b49d</anypoint.platfrom.client.id>
-						<anypoint.platform.client.secret>5AAC519C7D9e4375aa1cA3f693AFA71d</anypoint.platform.client.secret>
+						<anypoint.platfrom.client_id>a9878feeb0c143708b452952d9a6b49d</anypoint.platfrom.client_id>
+						<anypoint.platform.client_secret>5AAC519C7D9e4375aa1cA3f693AFA71d</anypoint.platform.client_secret>
 						<applicationName>poccicd</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
